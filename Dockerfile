@@ -17,7 +17,7 @@ RUN conda update conda -y && conda install -c conda-forge -c pyviz -y \
 
 WORKDIR /home/jovyan
 
-ADD Resources .
+COPY Resources/ Resources/
 ADD Pandas-DataWrangling.ipynb .
 
 
