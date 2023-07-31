@@ -11,11 +11,9 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 
 
 
-RUN conda update conda -y && conda install -c conda-forge -y \
-    pandas
-
-RUN conda install -c pyviz hvplot -y
-
+RUN conda update conda -y && conda install -c conda-forge -c pyviz -y \
+    pandas \
+    hvplot
 
 WORKDIR /home/jovyan
 
