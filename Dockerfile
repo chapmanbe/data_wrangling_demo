@@ -14,10 +14,13 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 RUN conda update conda -y && conda install -c conda-forge -y \
     pandas
 
-RUN conda install -c pyviz hvplot
+RUN conda install -c pyviz hvplot -y
 
 
 WORKDIR /home/jovyan
+
+ADD Resources .
+ADD Pandas-DataWrangling.ipynb .
 
 
 # RUN nbstripout --install
