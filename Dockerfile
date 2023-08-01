@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:ace427893664468dbb2549cc17f4ed80cefdf3d62a85953f1255387c6efc002f
+FROM jupyter/base-notebook:@sha256:a2fc20cbc3656d38b3f699fb97fcee165dfd919cbead4fcb2e1f96fd6c658a59
 MAINTAINER chapmanbe <brian.chapman@utah.edu>
 USER root
 # for physionet instructions see
