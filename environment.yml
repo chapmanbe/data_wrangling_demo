@@ -1,0 +1,9 @@
+name: dwd
+channels:
+  - pyviz
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas=2.0.3
+  - hvplot=0.8.4
+  - jupyterlab=4.0.3

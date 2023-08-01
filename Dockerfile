@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:latest
+FROM jupyter/base-notebook:ace427893664468dbb2549cc17f4ed80cefdf3d62a85953f1255387c6efc002f
 MAINTAINER chapmanbe <brian.chapman@utah.edu>
 USER root
 # for physionet instructions see
@@ -12,8 +12,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 
 
 RUN conda update conda -y && conda install -c conda-forge -c pyviz -y \
-    pandas \
-    hvplot
+    pandas=2.0.3 \
+    hvplot=0.8.4
 
 WORKDIR /home/jovyan
 
